@@ -5,18 +5,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     Button showhideButton = null;
-    ImageView imageView=null;
+    TextView imageView=null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         showhideButton = (Button)findViewById(R.id.button);
-        imageView = (ImageView)findViewById(R.id.imgView);
+        imageView = (TextView) findViewById(R.id.imgView);
     }
 
     public void onButtonClick(View view){
